@@ -5,7 +5,7 @@ const { mkdtemp, rm } = require("node:fs/promises");
 const os = require("node:os");
 const path = require("node:path");
 const crypto = require("node:crypto");
-const { totpAt } = require("../mfa");
+const { totpAt } = require("../backend/mfa");
 
 const root = path.resolve(__dirname, "..");
 const adminKey = "isolated-e2e-bootstrap-key";

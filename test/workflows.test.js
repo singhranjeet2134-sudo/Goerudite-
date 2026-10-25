@@ -6,7 +6,7 @@ const { mkdtemp, readFile, rm, writeFile } = require("node:fs/promises");
 const os = require("node:os");
 const path = require("node:path");
 const crypto = require("node:crypto");
-const { totpAt } = require("../mfa");
+const { totpAt } = require("../backend/mfa");
 const zlib = require("node:zlib");
 const { strFromU8, strToU8, unzipSync, zipSync } = require("fflate");
 

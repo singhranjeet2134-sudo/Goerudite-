@@ -4,7 +4,7 @@ const { parseCsv, validateMatrix } = require("../scripts/validate-feature-matrix
 const {
   appendAuditRecord,
   verifyAuditRecords
-} = require("../audit-integrity");
+} = require("../backend/audit-integrity");
 const {
   createTotpSecret,
   decryptSecret,
@@ -13,7 +13,7 @@ const {
   verifyRecoveryCode,
   verifyTotp,
   totpAt
-} = require("../mfa");
+} = require("../backend/mfa");
 const crypto = require("node:crypto");
 
 const header = "Feature ID,Role,Page/route,Control or workflow,Expected behavior,Test performed,Result,Defect reference,Fix reference,Retest result,Responsive test status,Notes,Audit classification,Severity,Dependency / decision,Verification method";

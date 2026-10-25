@@ -1,0 +1,32 @@
+{
+  "name": "goerudite",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GoErudite role-based education sourcing platform",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "build": "npm run check:syntax && npm run test:inventory",
+    "check:syntax": "node scripts/check-syntax.js",
+    "lint": "biome lint app.js dashboard.js help-engine.js help-knowledge.js server.js support-chat.js playwright.config.js e2e test scripts",
+    "test": "node --test",
+    "test:unit": "node --test test/quality.test.js",
+    "test:integration": "node --test test/workflows.test.js",
+    "test:storage": "node --test --test-name-pattern=\"role-based procurement and moderation journeys\" test/workflows.test.js",
+    "test:inventory": "node scripts/validate-feature-matrix.js",
+    "test:e2e": "playwright test"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^5.11.2",
+    "fflate": "^0.8.3",
+    "nodemailer": "^10.2.1"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.3",
+    "@playwright/test": "^1.64.1",
+    "axe-core": "^4.14.0"
+  }
+}

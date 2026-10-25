@@ -1,0 +1,182 @@
+{
+  "users": [
+    {
+      "id": "66497ae7-457e-4611-9a4b-3c68ff125e70",
+      "firstName": "Ranjeet",
+      "lastName": "Singh",
+      "email": "singhranjeet2134@gmail.com",
+      "role": "school",
+      "passwordHash": "604920bc30f707ab86cd53933cb1eb28:840256ad62399a8cc929c08b8d80901b23c6fa29f6aa8f266f79c3b8a260f05118c0984d322d15c32ce7669a1ec7e7ea3b77db16da4b4ea05670e0d9c093c67e",
+      "createdAt": "2026-10-18T14:22:15.242Z",
+      "organizationName": "",
+      "verificationStatus": "verified",
+      "accountStatus": "active",
+      "profile": {}
+    },
+    {
+      "id": "873efc2b-1669-4535-afe0-90073fbb04d7",
+      "firstName": "sachin",
+      "lastName": "Prasad",
+      "email": "sachinprasad2845@gmail.com",
+      "role": "distributor",
+      "organizationName": "Sachin Distributor",
+      "profile": {},
+      "verificationStatus": "pending",
+      "accountStatus": "active",
+      "passwordHash": "3d51dbe009370024d5c0c15605dcf8d6:8427e79fefae79d7fe0bb904a33c795b1de05dddb48f3423e9f11d3621efc3bb5fc8afc59b5d6e63fbef4b213eff0d1250cc71f6d0872ac0a0e7947c43ab37a1",
+      "createdAt": "2026-10-18T15:18:49.956Z"
+    },
+    {
+      "id": "e3d1105e-bf1f-4773-8707-101a8a2fb3c1",
+      "firstName": "Suraj",
+      "lastName": "Patel",
+      "email": "surajk28395@gmail.com",
+      "role": "publisher",
+      "organizationName": "Publisher Sureaj",
+      "profile": {},
+      "verificationStatus": "pending",
+      "accountStatus": "active",
+      "passwordHash": "8dbc8a763cc3c4826a7ba4fdb28ffed9:d973365633d657573e8b9208d05342de2fd6070caa582bde37932b88996c9a568dc43e5173e9912ff95979595f5ea3a918194c4dbb19affb9549195044399d67",
+      "createdAt": "2026-10-18T15:45:28.992Z"
+    },
+    {
+      "id": "94832909-5cc4-4a17-a3f2-194a56080b0b",
+      "firstName": "Ravi",
+      "lastName": "Prasad",
+      "email": "ravi2979@gmail.com",
+      "role": "school",
+      "organizationName": "Ravi School",
+      "organizationId": "94832909-5cc4-4a17-a3f2-194a56080b0b",
+      "staffProfile": "owner",
+      "profile": {},
+      "consentAcceptedAt": "2026-10-23T19:00:11.336Z",
+      "verificationStatus": "pending",
+      "accountStatus": "active",
+      "passwordHash": "cb3d2643de55cdcbac38f186f24e9ba6:6fb79e327180185ec2d18343e89bfc5693e48ae9c289978dac0bb1770bc359119e074864b352978aaf4b3d74b46d6f6562e79a57c4789ac13196126d6e0e7a77",
+      "createdAt": "2026-10-23T19:00:11.393Z"
+    }
+  ],
+  "requests": [
+    {
+      "id": "GE-C75C5BA7",
+      "firstName": "Ranjeet",
+      "lastName": "Singh",
+      "email": "singhranjeet2134@gmail.com",
+      "role": "School Administrator",
+      "message": "Need assistance with platform access, role verification, workflow participation, or account-related activities?",
+      "createdAt": "2026-10-18T14:58:54.221Z",
+      "status": "received"
+    }
+  ],
+  "rfqs": [
+    {
+      "id": "RFQ-4CB63D61",
+      "ownerId": "66497ae7-457e-4611-9a4b-3c68ff125e70",
+      "organizationName": "",
+      "title": "CLASS-9 HINDI",
+      "session": "2026-2027",
+      "board": "CBSE",
+      "state": "DELHI",
+      "medium": "ENGLISH",
+      "deliveryCity": "DELHI",
+      "responseDeadline": "2026-11-20",
+      "budget": 50000,
+      "lines": [
+        {
+          "id": "89870de7-ca3a-4a48-b46b-40f20d013aa7",
+          "bookId": "",
+          "title": "HINDI",
+          "isbn": "1234567893",
+          "edition": "2026",
+          "publisher": "",
+          "className": "9",
+          "subject": "HINDI",
+          "quantity": 5000,
+          "catalogSnapshot": null
+        }
+      ],
+      "version": 1,
+      "versions": [],
+      "status": "published",
+      "createdAt": "2026-10-18T15:25:07.775Z",
+      "updatedAt": "2026-10-18T15:25:07.775Z"
+    },
+    {
+      "id": "RFQ-E55B7C12",
+      "userId": "66497ae7-457e-4611-9a4b-3c68ff125e70",
+      "bookId": "physics-core",
+      "bookTitle": "Physics Core",
+      "quantity": 2,
+      "createdAt": "2026-10-18T14:22:53.666Z",
+      "status": "submitted"
+    }
+  ],
+  "quotes": [],
+  "inventory": [],
+  "publisherCatalog": [],
+  "notifications": [
+    {
+      "id": "ce91e8bb-c2f1-49e2-a266-ca2ec4f687b7",
+      "userId": "66497ae7-457e-4611-9a4b-3c68ff125e70",
+      "type": "rfq",
+      "title": "RFQ published",
+      "message": "RFQ-4CB63D61 is now visible to verified supply partners.",
+      "entityId": "RFQ-4CB63D61",
+      "readAt": null,
+      "createdAt": "2026-10-18T15:25:07.775Z"
+    }
+  ],
+  "audit": [
+    {
+      "id": "2195740c-26bd-45c6-b055-ef8b8a2ad001",
+      "actorId": "66497ae7-457e-4611-9a4b-3c68ff125e70",
+      "actorName": "Ranjeet Singh",
+      "actorRole": "school",
+      "entity": "rfq",
+      "entityId": "RFQ-4CB63D61",
+      "action": "rfq.published",
+      "before": null,
+      "after": {
+        "id": "RFQ-4CB63D61",
+        "ownerId": "66497ae7-457e-4611-9a4b-3c68ff125e70",
+        "organizationName": "",
+        "title": "CLASS-9 HINDI",
+        "session": "2026-2027",
+        "board": "CBSE",
+        "state": "DELHI",
+        "medium": "ENGLISH",
+        "deliveryCity": "DELHI",
+        "responseDeadline": "2026-11-20",
+        "budget": 50000,
+        "lines": [
+          {
+            "id": "89870de7-ca3a-4a48-b46b-40f20d013aa7",
+            "bookId": "",
+            "title": "HINDI",
+            "isbn": "1234567893",
+            "edition": "2026",
+            "publisher": "",
+            "className": "9",
+            "subject": "HINDI",
+            "quantity": 5000,
+            "catalogSnapshot": null
+          }
+        ],
+        "status": "published",
+        "version": 1,
+        "createdAt": "2026-10-18T15:25:07.775Z",
+        "updatedAt": "2026-10-18T15:25:07.775Z"
+      },
+      "createdAt": "2026-10-18T15:25:07.776Z"
+    }
+  ],
+  "invitations": [],
+  "orders": [],
+  "purchaseRequests": [],
+  "disputes": [],
+  "approvalPolicies": [],
+  "blogs": [],
+  "advertisements": [],
+  "adEvents": [],
+  "adInquiries": []
+}

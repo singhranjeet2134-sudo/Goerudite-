@@ -1,6 +1,6 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
-const { articles, answerArticle, findArticle, normalizeText, suggestionsForRole } = require("../help-engine");
+const { articles, answerArticle, findArticle, normalizeText, suggestionsForRole } = require("../backend/help-engine");
 
 test("help articles have unique IDs and complete bilingual verified response fields", () => {
   assert.equal(new Set(articles.map(article => article.id)).size, articles.length);

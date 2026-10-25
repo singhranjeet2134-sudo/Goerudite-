@@ -3,18 +3,21 @@ const path = require("node:path");
 
 const root = path.resolve(__dirname, "..");
 const files = [
-  "mfa.js",
-  "audit-integrity.js",
-  "help-knowledge.js",
-  "help-engine.js",
-  "support-chat.js",
+  "backend/server.js",
+  "backend/mfa.js",
+  "backend/audit-integrity.js",
+  "backend/help-knowledge.js",
+  "backend/help-engine.js",
+  "frontend/app.js",
+  "frontend/dashboard.js",
+  "frontend/support-chat.js",
+  "api/index.js",
   "server.js",
-  "app.js",
-  "dashboard.js",
   "playwright.config.js",
   "e2e/roles.spec.js",
   "test/workflows.test.js",
   "test/quality.test.js",
+  "test/help-chat.test.js",
   "scripts/validate-feature-matrix.js"
 ];
 

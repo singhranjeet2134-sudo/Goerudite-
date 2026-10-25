@@ -2,15 +2,47 @@
 
 A responsive GoErudite academic sourcing website based on the supplied design PDF, with a role-based dashboard and a built-in Node.js API.
 
+## Project Structure (Monolithic Architecture)
+
+The codebase is cleanly divided into `frontend/` and `backend/` domains, while operating as a unified monolithic application:
+
+```
+Goerudite-/
+├── frontend/             # Single-Page Application (HTML5, Vanilla CSS & JS)
+│   ├── index.html        # Main HTML shell & dynamic SEO entry point
+│   ├── styles.css        # Responsive design system & themes
+│   ├── app.js            # Public SPA router & workflows
+│   ├── dashboard.js      # Role-based workspaces (School, Distributor, Retailer, Publisher, Admin, Other)
+│   ├── support-chat.js   # Bilingual floating support chat widget
+│   └── README.md         # Detailed Frontend documentation
+├── backend/              # Native Node.js Server & APIs
+│   ├── server.js         # REST endpoints, auth, sessions, static asset delivery, and data persistence
+│   ├── mfa.js            # RFC 6238 TOTP MFA, AES-256-GCM encryption & recovery codes
+│   ├── audit-integrity.js# HMAC-SHA256 tamper-evident audit logs
+│   ├── help-engine.js    # Bilingual intent matching & NLP scoring
+│   ├── help-knowledge.js # 26 verified bilingual help articles
+│   └── README.md         # Detailed Backend documentation
+├── data/                 # JSON flat-file storage
+│   ├── store.json        # Primary database file
+│   └── backups/          # Snapshot backups
+├── api/                  # Vercel Serverless Function entry point
+│   └── index.js          # Monolithic bridge for Vercel deployment
+├── vercel.json           # Vercel routing configuration
+├── scripts/              # Build syntax and feature matrix validation
+└── test/                 # Test suites (workflows, quality, help chat)
+```
+
 ## Run locally
 
 Requires Node.js 18 or newer. From this folder, run:
 
-```powershell
-node server.js
+```bash
+npm start
+# or: node backend/server.js
+# or: node server.js
 ```
 
-Open **http://localhost:3000**. The website and API use the same origin. Runtime dependencies include `fflate` and `fast-xml-parser` for bounded XLSX archive/XML handling, and `nodemailer` for optional SMTP invitation delivery.
+Open **http://localhost:3000**. The frontend and backend run together seamlessly on the same origin.
 
 The JSON data store is written to `data/store.json` by default. For a separate local data directory or port, set `GOERUDITE_DATA_DIR` or `PORT` before starting the server.
 
